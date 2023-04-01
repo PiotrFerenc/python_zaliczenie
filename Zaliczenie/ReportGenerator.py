@@ -44,7 +44,7 @@ class ReportGenerator:
         wadliwe_logi = []
 
         for log in logi:
-            if re.fullmatch(r'\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}\s-?(\d*[1-9]\d*(\.\d+)?|0\.\d*[1-9]\d*)C', log):
+            if re.fullmatch(r'\d{4}-[01]\d-[0-3]\d [0-2]\d:[0-5]\d [1-9]\d*(\.\d+)?C', log):
                 prawidlowe_logi.append(log)
             else:
                 wadliwe_logi.append(log)
